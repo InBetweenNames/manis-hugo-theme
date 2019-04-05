@@ -123,7 +123,6 @@ p { margin-top: 0; }
 }
 #brand h5 {
   color: #898989;
-  margin-bottom: -.2rem;
 }
 #related h3 {
   text-align: left;
@@ -132,14 +131,24 @@ p { margin-top: 0; }
 .header-text
 {
   vertical-align:middle;
-  padding-top:5rem;
+  padding-top:2rem;
+}
+
+@media (min-width: 40rem) {
+  .float-left-lg {
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-text
+  {
+    padding-top:5rem;
+  }
 }
 
 #profileimg {
   border-radius:50%;
-  vertical-align: middle;
-  float: left !important;
-  margin-right:3rem;
 }
 
 /* #Links
@@ -327,7 +336,6 @@ ol {
 
 .brand-title
 {
-  height:180px;
 }
 
 /* #Utilities

@@ -3,7 +3,7 @@
 	{{- if eq .Kind "home" -}}
   <div class="brand-title">
   {{- with .Site.Params.AuthorImg -}}
-  <img id="profileimg" src="{{.}}"/>
+  <img id="profileimg" class="float-left-lg" src="{{.}}"/>
   {{- end -}}
   <div class="header-text">
   <h1>{{ .Site.Params.AuthorName }}</h1>
