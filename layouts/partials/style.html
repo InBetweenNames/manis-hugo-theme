@@ -1,4 +1,10 @@
 <style>
+  {{- with .Site.Params.BackColorTheme -}}
+  body {
+    background-color: {{ . }}
+  }
+  {{- end -}}
+
 	a { color: {{ .Site.Params.ColorTheme }}; }
 	blockquote {
 		border-left-color: {{ .Site.Params.ColorTheme }};

@@ -50,6 +50,7 @@ pygmentsUseClasses = true
 
 	# Color of your website's accent
 	colorTheme = "#ff8181"
+  backColorTheme = "inherit"
 	# Maximum number of item in Latest Posts or Works
 	latestCount = 3
 	# Path to site's favicon image
