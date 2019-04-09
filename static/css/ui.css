@@ -25,6 +25,41 @@
 - #Media Queries
 */
 
+body {
+  background-color: var(--bg-color); 
+}
+
+a { color: var(--fg-color); }
+
+blockquote {
+    border-left-color: var(--fg-color);
+    border-right-color: var(--fg-color);
+}
+
+.bar a:hover {
+    color: var(--fg-color);
+    text-decoration: none;
+}
+
+.sep {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left:0;
+    width: 32rem;
+    max-width: 100%; 
+    clear: left;
+    border-top: 2px solid var(--fg-color); 
+}
+
+.topsep
+{
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  width: 100%;
+  border-top: 2px dashed var(--top-sep-color); 
+}
+
 /* #Container
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -57,7 +92,7 @@ body {
   line-height: 1.7;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
-  color: #444;
+  color: var(--text-color);
 }
 
 
@@ -67,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 300;
-  color: #222;
+  color: var(--heading-color);
   font-family: 'Raleway', sans-serif;
 }
 h1 {
@@ -122,7 +157,7 @@ p { margin-top: 0; }
   font-weight: bold
 }
 #brand h5 {
-  color: #898989;
+  color: var(--tagline-color);
 }
 #related h3 {
   text-align: left;
@@ -197,7 +232,7 @@ ul.no-bullet {
 .no-bullet span {
   display: none;
   font-size: 1.7rem;
-  color: #666;
+  color: var(--date-color);
   font-family: monospace;
 }
 @media (min-width: 40rem) {
@@ -207,7 +242,7 @@ ul.no-bullet {
   }
 }
 .terms li>span {
-  color: #666;
+  color: var(--date-color);
   font-family: monospace;
 }
 
@@ -283,7 +318,7 @@ blockquote cite a {
 
 /* #Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.bar a { color: #777; }
+.bar a { color: var(--bar-nav-color); }
 .bar ul {
   list-style: none;
   margin: 0;

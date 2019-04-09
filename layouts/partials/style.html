@@ -1,33 +1,38 @@
 <style>
-  {{- with .Site.Params.BackColorTheme -}}
-  body {
-    background-color: {{ . }}
-  }
-  {{- end -}}
-
-	a { color: {{ .Site.Params.ColorTheme }}; }
-	blockquote {
-		border-left-color: {{ .Site.Params.ColorTheme }};
-		border-right-color: {{ .Site.Params.ColorTheme }}; }
-	.bar a:hover {
-		color: {{ .Site.Params.ColorTheme }};
-		text-decoration: none; }
-	.sep {
-		margin-top: 2rem;
-		margin-bottom: 1rem;
-		margin-left:0;
-		width: 32rem;
-    max-width: 100%; 
-    clear: left;
-		border-top: 2px solid {{ .Site.Params.ColorTheme }}; 
-  }
-
-  .topsep
+  :root
   {
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-    margin-left: 0;
-    width: 100%;
-    border-top: 2px dashed {{ .Site.Params.TopSepColor }}; 
+    {{ with .Site.Params.BackgroundColor }}
+    --bg-color: {{ . }};
+    {{ end }}
+   
+    {{ with .Site.Params.ForegroundColor  }}
+    --fg-color: {{ . }};
+    {{ end }}
+
+    {{ with .Site.Params.TextColor }}
+    --text-color: {{ . }};
+    {{ end }}
+
+    {{ with .Site.Params.HeadingColor }}
+    --heading-color: {{ . }};
+    {{ end }}
+
+    {{ with .Site.Params.TaglineColor }}
+    --tagline-color: {{ . }};
+    {{ end }}
+    
+    {{ with .Site.Params.TopSepColor }}
+    --top-sep-color: {{ . }};
+    {{ end }}
+
+    {{ with .Site.Params.DateColor }}
+    --date-color: {{ . }};
+    {{ end }}
+    
+    {{ with .Site.Params.BarNavColor }}
+    --bar-nav-color: {{ . }};
+    {{ end }}
+
   }
-</style>
+
+  </style>
