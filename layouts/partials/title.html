@@ -27,11 +27,16 @@
     {{ else }}
     {{ .Title }}
     {{ end }}
+
+    {{ if .Params.Part }}
+      <span class="part">(Part {{ .Params.Part }}{{ if .Params.EndPart }} of {{ .Params.EndPart }}{{ end }})</span>
+    {{ end }}
   </h1>
-	<h5>
+ 
+  <h5>
 		{{ $dateformat := .Site.Params.DateFmt | default "Jan 02, 2006" }}
 		<time datetime="{{.Date}}">{{ .Date.Format $dateformat }}</time>
-		<span class="no-print">
+    <span class="no-print">
 			{{ with .Params.tags -}}
 			-
 				{{ range . }}
@@ -42,7 +47,7 @@
 			-
 			<a href="{{.}}">{{ T "workHomepage" }}</a>
 			{{- end -}}
-		<span>
+		</span>
 	</h5>
 	<!-- Taxonomy Page -->
 	{{- else if eq .Kind "taxonomy" -}}
