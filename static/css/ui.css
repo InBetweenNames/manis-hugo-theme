@@ -329,16 +329,26 @@ blockquote cite a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .bar a { color: var(--bar-nav-color); }
 .bar ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
+/* =Inline bulleted lists
+-------------------------------------------------------------- */
 .bar li {
-  display: inline;
+	display:inline-block;
+  margin: 0;
   font-size: 1.8rem;
-  margin-right: 1rem;
-  margin-left: 0;
 }
+.bar li:before {
+	content: '|';
+  padding: 1rem;
+	color:var(--bar-nav-color);
+}
+.bar li:first-child:before {
+	padding: 0rem;
+  content: '';
+}
+
 @media (min-width: 40rem) {
   .bar li {
     font-size: 2.2rem;
