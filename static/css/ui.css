@@ -247,12 +247,16 @@ ul.no-bullet {
 }
 
 .part {
-  /*margin-left: 3rem;*/
   font-family: monospace;
   color: var(--date-color);
   font-weight: initial;
   font-size: 2rem;
   white-space: nowrap;
+}
+
+li .part
+{
+  display: ruby;
 }
 
 dd { margin-left: 2rem; }
