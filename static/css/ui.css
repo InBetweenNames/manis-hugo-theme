@@ -233,7 +233,7 @@ ul.no-bullet {
   display: none;
   font-size: 1.7rem;
   color: var(--date-color);
-  font-family: monospace;
+  font-family: 'Iosevka Web', monospace;
 }
 @media (min-width: 40rem) {
   .no-bullet span {
@@ -243,11 +243,11 @@ ul.no-bullet {
 }
 .terms li>span {
   color: var(--date-color);
-  font-family: monospace;
+  font-family: 'Iosevka Web', monospace;
 }
 
 .part {
-  font-family: monospace;
+  font-family: 'Iosevka Web', monospace;
   color: var(--date-color);
   font-weight: initial;
   font-size: 2rem;
@@ -271,7 +271,7 @@ code {
   background: #f1f1f1;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Iosevka Web', monospace;
 }
 pre > code {
   display: block;
@@ -279,7 +279,7 @@ pre > code {
   white-space: pre-wrap;
   background: #2b303b;
   color: #c0c5ce;
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Iosevka Web', monospace;
 }
 
 /* #Tables
